@@ -1,6 +1,8 @@
 package com.example.control;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +12,8 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity{
 
     public static boolean hasAdminRights = false;
-    public static String message;
+    //public static String message;
+    public static Context context;
 
 
     @Override
@@ -18,11 +21,11 @@ public class MainActivity extends AppCompatActivity{
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Thread recServerThread = new Thread(new ServerListener(getApplicationContext()));
         recServerThread.start();
 
     }
+
 
     public void commandOpen(View view){
         ConnectionSend.sendWidth("100");

@@ -34,13 +34,17 @@ public class ServerListener implements Runnable {
                 inputStreamReader = new InputStreamReader(socket.getInputStream());
                 bufferedReader = new BufferedReader(inputStreamReader);
                 message = bufferedReader.readLine();
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
-                    }
-                });
-                MainActivity.message = message;
+                if(message != null) {
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            MessageProcessor messageProcessor = new MessageProcessor();
+                            messageProcessor.processMessage(message);
+                            Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+                //MainActivity.message = message;
             } while (true);
         } catch (IOException e) {
             e.printStackTrace();

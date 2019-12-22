@@ -1,12 +1,6 @@
 <resources>
     <string name="app_name">Aplikacja kontrolna</string>
-    <string name="btn_stop">Stop</string>
     <string name="btn_cfg">Konfiguracja</string>
-    <string name="img_btn_desc">Konfiguracja</string>
-    <string name="txt_info">Przesłona jest otwarta w</string>
-    <string name="txt_value">0</string>
-    <string name="txt_in">Wprowadź wartosć otwarcia</string>
-    <string name="in_value">0%</string>
     <string name="cfg_name">Ustawienia konfiguracyjne</string>
     <string-array name="cfg_list">
         <item>0%</item>
