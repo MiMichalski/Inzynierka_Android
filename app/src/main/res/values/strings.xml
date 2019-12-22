@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Aplikacja kontrolna</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_cfg">Konfiguracja</string>
+    <string name="img_btn_desc">Konfiguracja</string>
+    <string name="txt_info">Przesłona jest otwarta w</string>
+    <string name="txt_value">0</string>
+    <string name="txt_in">Wprowadź wartosć otwarcia</string>
+    <string name="in_value">0%</string>
+    <string name="cfg_name">Ustawienia konfiguracyjne</string>
+    <string-array name="cfg_list">
+        <item>0%</item>
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+        <item>100%</item>
+    </string-array>
+    <string name="btn_open">Otwórz</string>
+    <string name="btn_close">Zamknij</string>
+    <string name="btn_setPerValue">Otwórz na zadany procent</string>
+    <string name="btn_autoA">Automat</string>
+    <string name="btn_settings">Ustawienia</string>
+    <string name="login_name">Logowanie</string>
+    <string name="btn_login">Zaloguj</string>
+    <string name="txt_pass">Hasło</string>
+    <string name="hint_pass">Wpisz hasło</string>
+</resources>
