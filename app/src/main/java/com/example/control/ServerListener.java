@@ -2,7 +2,7 @@ package com.example.control;
 
 import android.content.Context;
 import android.os.Handler;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,12 +18,13 @@ public class ServerListener implements Runnable {
     BufferedReader bufferedReader;
     String message;
     Handler handler = new Handler();
+    public static boolean running = true;
 
-    protected Context context;
+    //protected Context context;
 
-    public ServerListener(Context context){
-        this.context = context.getApplicationContext();
-    }
+    //public ServerListener(Context context){
+    //    this.context = context.getApplicationContext();
+    //}
 
     @Override
     public void run() {
@@ -40,12 +41,12 @@ public class ServerListener implements Runnable {
                         public void run() {
                             MessageProcessor messageProcessor = new MessageProcessor();
                             messageProcessor.processMessage(message);
-                            Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
                 //MainActivity.message = message;
-            } while (true);
+            } while (running);
         } catch (IOException e) {
             e.printStackTrace();
         }

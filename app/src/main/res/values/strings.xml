@@ -2,19 +2,6 @@
     <string name="app_name">Aplikacja kontrolna</string>
     <string name="btn_cfg">Konfiguracja</string>
     <string name="cfg_name">Ustawienia konfiguracyjne</string>
-    <string-array name="cfg_list">
-        <item>0%</item>
-        <item>10%</item>
-        <item>20%</item>
-        <item>30%</item>
-        <item>40%</item>
-        <item>50%</item>
-        <item>60%</item>
-        <item>70%</item>
-        <item>80%</item>
-        <item>90%</item>
-        <item>100%</item>
-    </string-array>
     <string name="btn_open">Otwórz</string>
     <string name="btn_close">Zamknij</string>
     <string name="btn_setPerValue">Otwórz na zadany procent</string>
@@ -24,4 +11,18 @@
     <string name="btn_login">Zaloguj</string>
     <string name="txt_pass">Hasło</string>
     <string name="hint_pass">Wpisz hasło</string>
+    <string name="messageF">Niepoprawe hasło!</string>
+    <string name="messageP">Zalogowano</string>
+    <string name="messageA">Logowanie</string>
+    <string name="messageT">Przekroczono limit czasu oczekiwania.</string>
+    <string name="messageNC">Urządzenie nie jest podłączone do właściwej sieci</string>
+    <string name="btn_autoM">Ręczny</string>
+    <string name="btn_toogle">ToggleButton</string>
+    <string name="messageWiFi">Sieć WiFi nie połączona</string>
+    <string name="messageDisconnected">Rozłączono z siecią</string>
+    <string name="btn_perc_cfg">Zarządzaj dozwolonymi rozwarciami</string>
+    <string name="btn_auto_cfg">Ustawienia trybu auto</string>
+    <string name="percent_name">Otwarcie na zadaną wartość</string>
+    <string name="btn_add_value">Dodaj wartość</string>
+    <string name="message_command_send">Otwieranie przesłony na</string>
 </resources>

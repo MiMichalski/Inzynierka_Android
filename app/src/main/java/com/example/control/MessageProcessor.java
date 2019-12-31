@@ -1,6 +1,4 @@
 package com.example.control;
-import android.content.Context;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -13,6 +11,7 @@ public class MessageProcessor {
         String command = aList.get(0).toString().trim();
         switch (command) {
             case "ItsMe!":
+                MainActivity.connectedToController = true;
                 break;
             case "login":
                 LoginActivity.newMsg = true;
